@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.brand {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.menu {
+    display: flex;
+    gap: 70px;
+    /* Jarak antar item, ubah sesuai kebutuhan */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    color: royalblue;
+}
+
+li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: royalblue;
+    transition: 0.3s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* .Brand {
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+} */
