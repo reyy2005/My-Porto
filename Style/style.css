@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 15px 30px;
     background-color: white;
     font-size: 20px;
 }
@@ -13,20 +13,23 @@
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-family: monospace;
+    font-family: 'Lexend Deca';
+    margin-left: 15px;
 }
 
 .menu {
     display: flex;
-    gap: 70px;
+    gap: 65px;
     /* Jarak antar item, ubah sesuai kebutuhan */
     list-style: none;
     padding: 0;
     margin: 0;
     font-family: monospace;
+    margin-right: 15px;
 }
 
 li {
+    font-family: 'Lexend Deca';
     cursor: pointer;
     position: relative;
     transition: 0.3s ease;
@@ -50,11 +53,58 @@ li:hover::after {
     transform: scaleX(1);
 }
 
+.wrapper {
+    /* position: relative; */
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 3em;
+    padding: 3em;
+    flex-wrap: wrap;
+}
 
-/* .Brand {
-    background-color: black;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 5px;
+.my-foto img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Hero {
+    font-family: 'Poppins';
+    /* position: absolute; */
+    /* left: 550px; */
+    /* top: 20%; */
+    margin-top: 3.5rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 3rem; */
+}
+
+section p {
+    font-size: 2.3em;
     font-weight: bold;
-} */
+    margin: 0.5em 0;
+}
+
+section span {
+    color: #5b72f2;
+}
+
+.img-media {
+    position: absolute;
+    display: flex;
+    left: 55%;
+    top: 80%;
+}
+
+.img-media>img {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 1rem;
+}
